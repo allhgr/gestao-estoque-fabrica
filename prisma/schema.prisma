@@ -10,5 +10,13 @@ datasource db {
 model Aluno {
   id    Int    @id @default(autoincrement())
   email String? @unique
-  name  String
+  nome  String
+}
+
+model Atividade {
+ id         Int @id @default(autoincrement())
+ descricao  String
+ dataInicio DateTime
+ dataFim    DateTime
+ @@map("atividades")
 }
