@@ -8,7 +8,7 @@ import { Produto } from './produto.interface';
 export class ProdutoController {
     constructor(private readonly userService: ProdutoService) { }
 
-    @Get()
+    //@Get()
     @ApiOperation({ summary: 'Listar todos os Produtos' })
     @ApiResponse({ status: 200, description: 'Lista de Produtos' })
     findAll(): Produto[] {

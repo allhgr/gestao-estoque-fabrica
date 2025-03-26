@@ -4,7 +4,7 @@ import { CreateAlunoDto } from './dto/create-aluno.dto';
 import { UpdateAlunoDto } from './dto/update-aluno.dto';
 import { ApiTags } from '@nestjs/swagger';
 
-@ApiTags('alunos')
+@ApiTags('Alunos')
 @Controller('alunos')
 export class AlunosController {
   constructor(private readonly alunosService: AlunosService) {}

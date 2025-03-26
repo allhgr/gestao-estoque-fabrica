@@ -8,7 +8,7 @@ import { Usuario } from './usuario.interface';
 export class UsuarioController {
   constructor(private readonly userService: UsuarioService) { }
 
-  @Get()
+  //@Get()
   @ApiOperation({ summary: 'Listar Todos os Usuários' })
   @ApiResponse({ status: 200, description: 'Lista de Usuários Mockados' })
   findAll(): Usuario[] {

@@ -20,3 +20,13 @@ model Atividade {
  dataFim    DateTime
  @@map("atividades")
 }
+
+model Fornecedor {
+ id             Int @id @default(autoincrement())
+ razaosocial    String?
+ nomefantasia   String
+ cnpj           Int
+ email          String @unique
+ telefone       Int
+ @@map("fornecedores")
+}
