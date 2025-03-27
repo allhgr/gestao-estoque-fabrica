@@ -18,15 +18,13 @@ model Atividade {
  descricao  String
  dataInicio DateTime
  dataFim    DateTime
- @@map("atividades")
 }
 
 model Fornecedor {
  id             Int @id @default(autoincrement())
  razaosocial    String?
  nomefantasia   String
- cnpj           Int
+ cnpj           String
  email          String @unique
- telefone       Int
- @@map("fornecedores")
+ telefone       String
 }

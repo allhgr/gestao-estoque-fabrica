@@ -5,26 +5,26 @@ export class FornecedorService {
     this.prisma = new PrismaClient();
   }
   async findAll() {
-    return this.prisma.atividade.findMany();
+    return this.prisma.fornecedor.findMany();
   }
   async findOne(id: number) {
-    return this.prisma.atividade.findUnique({
+    return this.prisma.fornecedor.findUnique({
       where: { id },
     });
   }
   async create(data: any) {
-    return this.prisma.atividade.create({
+    return this.prisma.fornecedor.create({
       data,
     });
   }
   async update(id: number, data: any) {
-    return this.prisma.atividade.update({
+    return this.prisma.fornecedor.update({
       where: { id },
       data,
     });
   }
   async remove(id: number) {
-    return this.prisma.atividade.delete({
+    return this.prisma.fornecedor.delete({
       where: { id },
     });
   }
